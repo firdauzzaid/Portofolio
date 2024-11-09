@@ -50,11 +50,11 @@ const Review = () => {
     gsap.to('.scrub-slide', {
       scrollTrigger: {
         trigger: '.scrub-slide',
-        start: '-100 80%',
-        end: '400% 80%',
+        start: '-100 70%',
+        end: '400% 70%',
         scrub: true
       },
-      x: '-1000'
+      x: '-700'
     })
   });
 
@@ -66,13 +66,14 @@ const Review = () => {
           </h2>
 
         <div className="scrub-slide flex items-stretch gap-3 w-fit">
-          {reviews.map(({ content, name, certificate, company }, key) => (
+          {reviews.map(({ content, name, company, certificate }, key) => (
             <ReviewCard
               key={key}
               name={name}
-              certificate={certificate}
               company={company}
               content={content}
+              certificate={certificate}
+              classes="reveal-up"
             />
           ))}
         </div>

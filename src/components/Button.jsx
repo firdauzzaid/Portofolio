@@ -8,6 +8,9 @@
  */
 import PropTypes from "prop-types";
 
+/**
+ * Button Primary
+ */
 const ButtonPrimary = ({ href, target = "_self", label, icon, classes }) => {
   if (href) {
     return (

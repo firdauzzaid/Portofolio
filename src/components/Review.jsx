@@ -59,10 +59,10 @@ const Review = () => {
   });
 
   return (
-    <section id="reviews" className="section overflow-hidden">
+    <section id="certificate" className="section overflow-hidden">
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">
-          Certificate Portofolio
+          My Certificate
           </h2>
 
         <div className="scrub-slide flex items-stretch gap-3 w-fit">

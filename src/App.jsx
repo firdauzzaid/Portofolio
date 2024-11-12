@@ -12,6 +12,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 
 /**
+ * Google Analytics modules
+ */
+import { useEffect } from "react";
+import { initGA, logPageView } from "./analytics";
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
+
+/**
  * Register GSAP plugins
  */
 gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -29,6 +36,15 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    initGA(); // Initialize GA when the app loads
+  }, []);
+
+  useEffect(() => {
+    logPageView(); // Log page views on route change
+  }, [location]);
 
   useGSAP(() => {
     const elements = gsap.utils.toArray('.reveal-up');
@@ -50,18 +66,18 @@ const App = () => {
   });
 
   return (
-    <ReactLenis root>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Skill />
-        <Work />
-        <Review />
-        <Contact />
-      </main>
-      <Footer />
-    </ReactLenis>
+      <ReactLenis root>
+        <Header />
+          <main>
+            <Hero />
+            <About />
+            <Skill />
+            <Work />
+            <Review />
+            <Contact />
+          </main>
+        <Footer />
+      </ReactLenis>
   );
 };
 

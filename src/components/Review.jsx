@@ -61,21 +61,21 @@ const Review = () => {
   return (
     <section id="certificate" className="section overflow-hidden">
       <div className="container">
-        <h2 className="headline-2 mb-8 reveal-up">
-          My Certificate
-          </h2>
-
-        <div className="scrub-slide flex items-stretch gap-3 w-fit">
-          {reviews.map(({ content, name, company, certificate }, key) => (
-            <ReviewCard
-              key={key}
-              name={name}
-              company={company}
-              content={content}
-              certificate={certificate}
-              classes="reveal-up"
-            />
-          ))}
+        <h2 className="headline-2 mb-8 reveal-up">My Certificate</h2>
+        {/* Scrollable container */}
+        <div className="scroll-container">
+          <div className="scroll-content flex items-stretch gap-3 w-fit">
+            {reviews.map(({ content, name, company, certificate }, key) => (
+              <ReviewCard
+                key={key}
+                name={name}
+                company={company}
+                content={content}
+                certificate={certificate}
+                classes="reveal-up"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

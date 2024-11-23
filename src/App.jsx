@@ -39,11 +39,11 @@ const App = () => {
   const location = useLocation();
 
   useEffect(() => {
-    initGA(); // Initialize GA when the app loads
+    initGA();
   }, []);
 
   useEffect(() => {
-    logPageView(); // Log page views on route change
+    logPageView();
   }, [location]);
 
   useGSAP(() => {

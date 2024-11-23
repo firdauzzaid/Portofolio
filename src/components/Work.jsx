@@ -24,8 +24,20 @@ const works = [
   {
     imgSrc: "./images/project-3.jpg",
     title: "Personal Portfolio",
-    tags: ["Web-design", "Development"],
+    tags: ["Web Design", "Development"],
     projectLink: "https://firdauzzaid.github.io/Portofolio/",
+  },
+  {
+    imgSrc: "./images/Table CRUD.png",
+    title: "CRUD Python",
+    tags: ["Entry Data", "Flask", "Web Development"],
+    projectLink: "https://firdauz.pythonanywhere.com/",
+  },
+  {
+    imgSrc: "./images/analyticsgoogle.png",
+    title: "Website Analytics",
+    tags: ["Analytics", "Traffic", "Data"],
+    projectLink: "https://github.com/firdauzzaid/Analytics-w-Google",
   },
 ];
 

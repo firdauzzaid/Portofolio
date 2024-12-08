@@ -39,6 +39,12 @@ const works = [
     tags: ["Analytics", "Traffic", "Data"],
     projectLink: "https://github.com/firdauzzaid/Analytics-w-Google",
   },
+  {
+    imgSrc: "./images/desain-mockup.png",
+    title: "Coupon Management",
+    tags: ["Claimfy", "Voucher", "Web"],
+    projectLink: "https://github.com/firdauzzaid/Voucher-Track",
+  },
 ];
 
 const Work = () => {

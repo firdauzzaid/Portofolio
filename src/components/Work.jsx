@@ -45,6 +45,12 @@ const works = [
     tags: ["Claimfy", "Voucher", "Web"],
     projectLink: "https://github.com/firdauzzaid/Voucher-Track",
   },
+  {
+    imgSrc: "./images/project-4.png",
+    title: "Tahfidz Students Report",
+    tags: ["Web", "Laravel", "Development"],
+    projectLink: "https://github.com/firdauzzaid/Tahfidz-Project",
+  },
 ];
 
 const Work = () => {

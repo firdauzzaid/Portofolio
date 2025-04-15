@@ -15,19 +15,14 @@ const skillItem = [
     desc: "Programming Language",
   },
   {
-    imgSrc: "./images/css3.svg",
-    label: "CSS",
-    desc: "User Interface",
+    imgSrc: "./images/php.svg",
+    label: "PHP",
+    desc: "Programming Language",
   },
   {
     imgSrc: "./images/javascript.svg",
     label: "JavaScript",
-    desc: "Interaction",
-  },
-  {
-    imgSrc: "./images/nodejs.svg",
-    label: "NodeJS",
-    desc: "Web Server",
+    desc: "Programming Language",
   },
   {
     imgSrc: "./images/flask.svg",
@@ -35,14 +30,39 @@ const skillItem = [
     desc: "Python Framework",
   },
   {
+    imgSrc: "./images/laravel.svg",
+    label: "Laravel",
+    desc: "PHP Framework",
+  },
+  {
     imgSrc: "./images/mysql.svg",
     label: "MySQL",
     desc: "Database",
   },
   {
+    imgSrc: "./images/nodejs.svg",
+    label: "NodeJS",
+    desc: "Web Server",
+  },
+  {
     imgSrc: "./images/react.svg",
     label: "React",
-    desc: "Framework",
+    desc: "Javascript Library",
+  },
+  {
+    imgSrc: "./images/html5.svg",
+    label: "HTML",
+    desc: "Markup Language",
+  },
+  {
+    imgSrc: "./images/css3.svg",
+    label: "CSS",
+    desc: "User Interface",
+  },
+  {
+    imgSrc: "./images/bootstrap.svg",
+    label: "Bootstrap",
+    desc: "User Interface",
   },
   {
     imgSrc: "./images/tailwindcss.svg",

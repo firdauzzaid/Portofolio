@@ -69,6 +69,15 @@ const Work = () => {
               tags={tags}
               projectLink={projectLink}
               classes="reveal-up"
+              onClick={() => {
+                if (typeof window.gtag === "function") {
+                  window.gtag("event", "click_project_link", {
+                    event_category: "project",
+                    event_label: title,
+                    value: key,
+                  });
+                }
+              }}
             />
           ))}
         </div>

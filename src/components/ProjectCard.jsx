@@ -8,9 +8,10 @@
  */
 import PropTypes from "prop-types";
 
-const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
+const ProjectCard = ({ imgSrc, title, tags, projectLink, classes, onClick }) => {
   return (
     <div
+      onClick={onClick}
       className={
         "relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors" +
         classes
@@ -47,17 +48,24 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
         </div>
       </div>
 
-      <a href={projectLink} target="_blank" className="absolute inset-0"></a>
+      <a 
+        href={projectLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute inset-0"
+        onClick={onClick}>
+      </a>
     </div>
   );
 };
 
-ProjectCard.prototype = {
+ProjectCard.propTypes = {
   imgSrc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
   projectLink: PropTypes.string,
   classes: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export default ProjectCard;

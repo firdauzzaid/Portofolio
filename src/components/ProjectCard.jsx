@@ -53,7 +53,8 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes, onClick }) => 
         target="_blank"
         rel="noopener noreferrer"
         className="absolute inset-0"
-        onClick={onClick}>
+        onClick={() => onClick(title)}
+      >
       </a>
     </div>
   );

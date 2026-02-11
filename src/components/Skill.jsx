@@ -42,7 +42,17 @@ const skillItem = [
   {
     imgSrc: "./images/nodejs.svg",
     label: "NodeJS",
-    desc: "Web Server",
+    desc: "Runtime",
+  },
+  {
+    imgSrc: "./images/vitejs.svg",
+    label: "ViteJS",
+    desc: "Build Tool and Dev Server",
+  },
+  {
+    imgSrc: "./images/git.svg",
+    label: "GIT",
+    desc: "Version Control System",
   },
   {
     imgSrc: "./images/react.svg",

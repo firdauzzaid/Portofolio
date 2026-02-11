@@ -46,7 +46,11 @@ body {
 \* ----------------------------------- */
 .material-symbols-rounded {
   @apply w-[1em] h-[1em] overflow-hidden;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz 24";
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz 24";
 }
 
 .container {
@@ -148,17 +152,17 @@ body {
 \* ----------------------------------- */
 
 .scroll-container {
-  overflow-x: auto; 
+  overflow-x: auto;
   overflow-y: hidden;
-  padding-bottom: 1rem; 
+  padding-bottom: 1rem;
 }
 
 .scroll-container::-webkit-scrollbar {
-  height: 8px; 
+  height: 8px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  background-color: scrollbar-track-zinc-800; 
+  background-color: scrollbar-track-zinc-800;
   border-radius: 4px;
 }
 
@@ -170,4 +174,3 @@ body {
   display: flex;
   gap: 1rem;
 }
-

@@ -30,9 +30,9 @@ const skillItem = [
     desc: "Python Framework",
   },
   {
-    imgSrc: "./images/laravel.svg",
-    label: "Laravel",
-    desc: "PHP Framework",
+    imgSrc: "./images/nextjs.svg",
+    label: "Next JS",
+    desc: "Javascript Framework",
   },
   {
     imgSrc: "./images/mysql.svg",
@@ -75,9 +75,7 @@ const Skill = () => {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="headline-2 reveal-up">
-          Tech Stack
-          </h2>
+        <h2 className="headline-2 reveal-up">Tech Stack</h2>
 
         <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]">
           Discover the powerful tools and technologies I use to create
@@ -86,12 +84,13 @@ const Skill = () => {
 
         <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
           {skillItem.map(({ imgSrc, label, desc }, key) => (
-            <SkillCard 
-            key={key} 
-            imgSrc={imgSrc} 
-            label={label} 
-            desc={desc}
-            classes="reveal-up" />
+            <SkillCard
+              key={key}
+              imgSrc={imgSrc}
+              label={label}
+              desc={desc}
+              classes="reveal-up"
+            />
           ))}
         </div>
       </div>
